@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rempahan Rempah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Oswald:wght@300&family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/darkmode.css">
+</head>
+<body>
+    <div class="box-notif">
+        <img src="gambar/spices.png" alt="">
+        <p>Kami ingin mengirimkan Anda Pemberitahuan tentang pos dan pembaruan terbaru.</p>
+        <div class="tombol">
+            <button id="Izinkan">Izinkan</button>
+            <button id="Blokir">Blokir</button>
+        </div>
+    </div>
+    <nav class="navbar" id="web">
+        <h1 id="home">RempahanRempah</h1>
+        <div class="nav-menu">
+            <a style="text-decoration:none" href="#home"><p>Home</p></a>
+            <a style="text-decoration:none" href="#contents"><p>Contents</p></a>
+            <a style="text-decoration:none" href ="#about"><p>About</p></a>
+            <a style="text-decoration:none" href ="#form"><p>Form-Req</p></a>
+            <a style="text-decoration:none" href="#contact"><p>Contact</p></a>
+            <a style="text-decoration:none" href="admin/adminlog.php"><p>Admin</p></a>
+            <div class="swicth-mode"> 
+                <input type="checkbox" id = "mode" onclick="ubahWarna()">
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <div class="tagline">
+            <h1>Taburkan <span>Rempahan Rempah</span><br>Untuk Kehidupan Lebih Sehat</h1>
+            <p>Healthy-Life, Happy-Life</p>
+            <img src="https://www.freepnglogos.com/uploads/youtube-logo-hd-8.png" height="40px" width="50px" alt="Youtube">
+            <a id="btn" href="https://www.youtube.com/">Kunjungi Youtube Kami</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="contents" id = "contents">
+            <h2>Temukan Manfaat Lebih Banyak Dari Rempah-rempahan Di Sini !</h2>
+            <div class="section-con">
+                <div class="section" id="s1">
+                    <a href="admin/informasi/info_kesehatan.php"><p>KESEHATAN</p></a>
+                    <img src="gambar/kesehatan.png" height="300px" width="200px" alt="">
+                    <p id="detail1" style="display:none;">Pada bagian ini akan berisi informasi mengenai manfaat rempah- rempahan yang berkaiatan dengan manfaat kesehatan dan meliputi resep cara membuat olahan rempahan tersebut.</p>
+                </div>
+                <div class="section" id="s2">
+                    <a href="admin/informasi/info_kuliner.php"><p>KULINER</p></a>
+                    <img src="gambar/kuliner.jpg" height="300px" width="200px"alt="">
+                    <p id="detail2" style="display: none;">Pada bagian ini akan berisi informasi mengenai manfaat rempah- rempahan untuk olahan kuliner dan meliputi resep cara membuat olahan rempahan tersebut.</p>
+                </div>
+                <div class="section" id="s3">
+                    <a href="admin/informasi/info_kecantikan.php"><p>KECANTIKAN</p></a>
+                    <img src="gambar/kecantikan.jpg" height="300px" width="200px"alt="">
+                    <p id="detail3" style="display:none">Pada bagian ini akan berisi informasi mengenai manfaat rempah- rempahan yang berkaiatan dengan manfaat kecantikan dan meliputi resep cara membuat olahan rempahan tersebut.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-head">
+                <h3 id = "about">About</h3>
+            </div>
+            <div class="about-body">
+                <p>Seperti yang kita semua tahu, Indonesia terkenal sebagai negara yang kaya akan rempah-rempah.
+                Rempah-rempah adalah bagian tumbuhan yang beraroma atau berasa kuat yang digunakan dalam jumlah kecil di makanan sebagai pengawet atau perisa dalam masakan. Tidak hanya itu,
+                Banyak Sekali Pemanfaatan rempah-rempah baik untuk kesehatan,olahan kuliner dan untuk bahan kecantikan.</p>
+
+                <p>Website <a style="text-decoration:none" href="#web"><span>RempahanRempah</span></a> hadir sebagai wadah yang menyajikan informasi seputar manfaat dari rempah-rempah yang ada
+                 serta memuat resep obat herbal, resep masakan, dan resep perawatan kulit dan wajah untuk kecantikan sebagai bentuk pemanfaatan rempah-rempah.
+                Dengan harapan para pembaca dapat mendapatkan pengetahuan tentang pemanfaatan rempah-rempah untuk memulai kehidupan yang lebih sehat.
+            </div> 
+        </div>
+        <div class="form-req" id="form">
+            <h3>Apakah Informasi Yang Anda Cari Tidak Tersedia ?</h3>
+            <p>Ayo lakukan pengisian request informasi, agar membantu kami menemukan informasi yang Anda Cari</p>
+            <form method="post" action="tambah.php" id="inputan">
+                <label for="nama">Nama :</label> <br>
+                <input size = "30" name = "nama" id="nama" type="text" placeholder="Masukkan Nama Anda"><br><br>
+                <label for="isi-email">Email :</label> <br>
+                <input name = "email" size = "30" id="isi-email" type="email" placeholder="Masukkan Email Anda">
+                <p>Silahkan Pilih Kategori Informasi :</p>
+                <div>
+                    <input id="kesehatan-form" type="checkbox" name="kt[]" value="Kesehatan">
+                    <label for="kesehatan-form">KESEHATAN</label>
+                </div>
+                
+                <div>
+                    <input id="kuliner-form" type="checkbox" name="kt[]" value="Kuliner">
+                    <label for="kuliner-form">KULINER</label>
+                </div>
+                
+                <div>
+                    <input id="kecantikan-form" type="checkbox" name="kt[]" value="Kecantikan">
+                    <label for="kecantikan-form">KECANTIKAN</label>
+                </div>
+                <br>
+                <label for="Rempah">Jenis Rempahan :</label> <br>
+                <input size = "30" name = "Rempah" id="Rempah" type="text" placeholder="Masukkan Jenis Rempah"><br><br>
+                <label for="info">Detail Informasi (Wajib Diisi) :</label> <br>
+                <textarea name="info" id="info" row="8" cols="40" placeholder="Masukkan Detail Informasi"></textarea> <br><br>
+                <label for="waktu_req">Waktu Request :</label> <br>
+                <input id="waktu_req" name="waktu_req" type="datetime-local"><br>
+                <br>
+                <input style = "background-color: #897249;
+                border-radius: 40%;
+                text-decoration: none;
+                color: white;
+                width: 200px;
+                height: 60px;
+                padding: 20px 20px;
+                margin: 20px 20px;
+                font-size: 20px;
+                cursor: pointer;" type="submit" value="Kirim" name = "Kirim">
+            </form>
+        </div>
+        <a class="link_info" href="daftar_info.php"> Lihat Daftar Request</a>
+    </div>
+    <div class="footer" >
+        <h2 id="contact">Contact Us</h2>
+        <div class = "fotlist">
+            <img src="gambar/whatsapp.png" height="30px" width="30px" alt="Phone">
+            <img src="gambar/twitter.png" height="30px" width="30px" alt="twitter">
+            <img src="gambar/instagram.png" height="30px" width="30px" alt="Instagram">
+            
+        </div>
+    </div>
+    <script src="js/jvscript.js"></script>
+</body>
+</html>

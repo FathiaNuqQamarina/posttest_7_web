@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kristi&family=Oswald:wght@300&family=Poppins:wght@200&family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../stylesheet/style.css">
+    <link rel="stylesheet" href="../../stylesheet/darkmode.css">
+    <link rel="stylesheet" href="../../stylesheet/data_info.css">
+</head>
+<body>
+    <nav class="navbar" id="web">
+        <h1 id="home">RempahanRempah</h1>
+        <div class="nav-menu">
+            <div class="swicth-mode"> 
+                <input type="checkbox" id = "mode" onclick="ubahWarna()">
+            </div>
+        </div>
+    </nav>
+    <h1 style="text-align:center;margin-top: 10%;">Menu Admin</h1>
+    <table style="font-size: 30px; align-items: center; margin-left: 40%;margin-top: 5%;margin-bottom: 5%;color: black;border-radius: 10%; border: 2px solid black;">
+        <tr>
+            <td><a style = "text-decoration: none; padding: 20px;"  href="../data_kuliner.php">Manajemen Informasi Kuliner</a></td>
+        <tr>
+            <td><a style = "text-decoration: none; padding: 20px;"  href="../data_kesehatan.php">Manajemen Informasi Kesehatan</a></td>
+        </tr>
+        <tr>
+            <td><a  style = "text-decoration: none; padding: 20px;"  href="../data_kecantikan.php">Manajemen Informasi Kecantikan</a></td>
+        </tr>
+    </table>
+    <a id = "link-log" href="logout.php">logout</a>
+    <div class="footer" >
+        <h2 id="contact">Contact Us</h2>
+        <div class = "fotlist">
+            <img src="../../gambar/whatsapp.png" height="30px" width="30px" alt="Phone">
+            <img src="../../gambar/twitter.png" height="30px" width="30px" alt="twitter">
+            <img src="../../gambar/instagram.png" height="30px" width="30px" alt="Instagram">
+            
+        </div>
+    </div>
+    <script src="js/jvscript.js"></script>
+</body>
+</html>
